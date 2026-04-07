@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/heidimarila/Deployment-assignmnent/badge.svg)](https://coveralls.io/github/heidimarila/Deployment-assignmnent)
+
 # Student template
 
 ## Purpose of this repository
