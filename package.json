@@ -1,0 +1,29 @@
+{
+  "name": "software-testing-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "nyc mocha test/*.test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^11.7.5",
+    "nyc": "^18.0.0"
+  },
+  "nyc": {
+    "all": false,
+    "include": [
+      "src/*.js"
+    ],
+    "exclude": [
+      "src/.internal/**"
+    ],
+    "reporter": [
+      "text",
+      "lcov"
+    ]
+  }
+}
