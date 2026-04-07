@@ -27,3 +27,5 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         file: ./coverage/lcov.info
+        base-path: ./
+        debug: true
