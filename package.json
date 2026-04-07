@@ -17,16 +17,9 @@
 "c8": {
     "all": true,
     "src": "./src",
-    "include": [
-      "src/*.js"
-    ],
-    "exclude": [
-      "src/.internal/**",
-      "test/**"
-    ],
-    "reporter": [
-      "text",
-      "lcov"
-    ]
+    "include": ["src/*.js"],
+    "exclude": ["src/.internal/**","test/**"],
+    "reporter": ["text", "lcov"],
+    "report-dir": "./coverage"
   }
 }
