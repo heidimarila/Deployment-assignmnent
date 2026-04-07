@@ -5,26 +5,28 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nyc mocha test/*.test.js --exit"
+    "test": "c8 mocha test/*.test.js --exit"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "c8": "^11.0.0",
     "mocha": "^11.7.5",
     "nyc": "^18.0.0"
   },
-  "nyc": {
+"c8": {
     "all": true,
+    "src": "./src",
     "include": [
       "src/*.js"
     ],
     "exclude": [
-      "src/.internal/**"
+      "src/.internal/**",
+      "test/**"
     ],
     "reporter": [
-      "lcov",
-      "text"
-    ],
-    "report-dir": "./coverage"
+      "text",
+      "lcov"
+    ]
   }
 }
