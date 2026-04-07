@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nyc --reporter=lcov --report-dir=coverage mocha test/*.test.js"
+    "test": "nyc mocha test/*.test.js --exit"
   },
   "author": "",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "nyc": "^18.0.0"
   },
   "nyc": {
-    "all": false,
+    "all": true,
     "include": [
       "src/*.js"
     ],
@@ -22,8 +22,9 @@
       "src/.internal/**"
     ],
     "reporter": [
-      "text",
-      "lcov"
-    ]
+      "lcov",
+      "text"
+    ],
+    "report-dir": "./coverage"
   }
 }
