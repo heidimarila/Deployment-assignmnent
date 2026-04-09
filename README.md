@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/heidimarila/Deployment-assignmnent/badge.svg)](https://coveralls.io/github/heidimarila/Deployment-assignmnent)
+[![Coverage Status](https://coveralls.io/repos/github/heidimarila/Deployment-assignmnent/badge.svg?branch=main)](https://coveralls.io/github/heidimarila/Deployment-assignmnent?branch=main)
 
 # Student template
 
