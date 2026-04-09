@@ -22,10 +22,7 @@ jobs:
     - name: Run tests 
       run: npm test
 
-    - name: Coveralls
-      uses: coverallsapp/github-action@v2
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        file: ./coverage/lcov.info
-        base-path: ./
-        debug: true
+    - name: Manual Coveralls upload
+      run: npm run coveralls
+      env:
+        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
